@@ -1,0 +1,23 @@
+[package]
+name = "randomness-callback"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "randomness_callback"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+bytemuck = "^1"
+anchor-spl = "0.29.0"
+switchboard-solana = "0.29.71"
+
+
